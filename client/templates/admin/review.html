@@ -1,11 +1,11 @@
 <template name='review'>
-    {{#each preImages}}
-    <div class='thumb-container'>
-        <a href="/image/{{this._id}}" target="_blank"><img src="{{this.url store='Thumbs'}}" alt="" class="thumbnail"/></a>
-        <div class='review-bar'>
-            <div class='glyphicon glyphicon-ok yes'></div>
-            <div class='glyphicon glyphicon-remove no'></div>
-        </div>
+    <div class='review-container'>
+        <div class='review-btn selected moderator'>moderator</div>
+        <div class='review-btn curator'>curator</div>
     </div>
-    {{/each}}
+    {{#if moderatorTrack}}
+        {{> moderator}}
+    {{else}}
+        {{> curator}}
+    {{/if}}
 </template>

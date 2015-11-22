@@ -1,22 +1,33 @@
 Template.review.helpers({
-    preImages: function() {
+    images: function(status) {
         return Images.find({
-            status: 'pre'
+            status: status
         }); // Where Images is an FS.Collection instance
     },
+
+    moderatorTrack: function() {
+        return Session.get('moderator');
+    }
 });
 
 
 Template.review.events({
-    'click .yes': function() {
-        Images.update({_id: this._id},
-            {$set: {status: 'new'}
-        })
+    'click .review-btn': function() {
+        $('.review-btn').removeClass('selected');
+        $(event.target).addClass('selected');
     },
 
-    'click .no': function() {
-        Images.update({_id: this._id},
-            {$set: {status: 'flagged'}
-        })
+    'click .moderator': function() {
+        Session.set('moderator', true);
+        Session.set('curator', false);
+    },
+
+    'click .curator': function() {
+        Session.set('moderator', false);
+        Session.set('curator', true);
     }
 })
+
+Template.review.rendered = function() {
+    Session.set('moderator', true);
+}
