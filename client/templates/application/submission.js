@@ -1,4 +1,4 @@
-Template.Submission.events({
+Template.submission.events({
     'submit .submission': function (event) {
         event.preventDefault();
         var file = document.getElementById('myFileInput').files[0];
