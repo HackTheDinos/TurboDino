@@ -1,0 +1,12 @@
+<template name="gallery">
+    {{> galleryBar}}
+    {{#if isActivePath '/gallery/new'}}
+        {{> galleryNew}}
+    {{/if}}
+    {{#if isActivePath '/gallery/fossils'}}
+        {{> galleryFossils}}
+    {{/if}}
+    {{#if isActivePath '/gallery/nonfossils'}}
+        {{> galleryNonFossils}}
+    {{/if}}
+</template>
