@@ -14,5 +14,13 @@ Template.submission.events({
                 officialStory: ''
             }});
         });
+    },
+
+    'click .agree': function() {
+        $('.submission-modal').modal('hide');
     }
 });
+
+Template.submission.rendered = function() {
+    $('.submission-modal').modal('show');
+}

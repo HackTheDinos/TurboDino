@@ -1,5 +1,15 @@
 <template name="submission">
     <div class="submission container">
+        <div class="modal fade submission-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <p>
+                    When submitting a photo, please ensure that it is a well-focused image with a ruler next to the fossil for scale.
+                </p>
+                <button class='btn btn-primary btn-block agree'>Got it</button>
+            </div>
+          </div>
+        </div>
         <h2>Submit a Photo</h2>
         <form role="form">
             <div class="form-group">
@@ -18,3 +28,5 @@
         </form>
     </div>
 </template>
+
+
