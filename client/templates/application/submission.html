@@ -1,0 +1,20 @@
+<template name="Submission">
+    <div class="submission container">
+        <h2>Submit a Photo</h2>
+        <form role="form">
+            <div class="form-group">
+                <label for="photo">Fossil Photo:</label>
+                <input type="file" name="photo" class="myFileInput">
+            </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" class="form-control" id="location" placeholder="Enter location">
+            </div>
+            <div class="form-group">
+                <label for="story">Fossil Story:</label>
+                <textarea type="story" class="form-control" id="story" placeholder="Enter fossil story"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+</template>
