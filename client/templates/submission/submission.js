@@ -14,10 +14,19 @@ Template.submission.events({
                 officialStory: ''
             }});
         });
+
+        $('.thank-you-modal').modal('show');
     },
 
     'click .agree': function() {
         $('.submission-modal').modal('hide');
+    },
+
+    'click .thank-you': function() {
+        $('.thank-you-modal').modal('hide');
+        $('.thank-you-modal').on('hidden.bs.modal', function (e) {
+            Router.go('/gallery/new');
+        })
     }
 });
 
