@@ -15,3 +15,8 @@ twbs:bootstrap
 aldeed:autoform
 aldeed:collection2
 zimme:active-route
+accounts-facebook
+accounts-google
+cfs:standard-packages
+cfs:gridfs
+cfs:graphicsmagick
