@@ -1,8 +1,26 @@
-.home-page .btn {
-	letter-spacing: 2px;
-	padding: 15px;
+.home-page .btn, .submission-modal .btn {
+    letter-spacing: 2px;
+    padding: 15px;
 }
 
 .home-page h3 {
-	text-align: center;
+    text-align: center;
+}
+
+.submission-modal p {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.submission-modal {
+    top: 20%;
+}
+
+.highlight img {
+    margin: 0 auto;
+}
+
+.highlight img {
+    width: 100%;
 }
