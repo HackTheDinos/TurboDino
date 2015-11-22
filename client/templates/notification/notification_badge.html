@@ -1,0 +1,5 @@
+<template name="notificationBadge">
+    <button class="navbar-btn btn {{#if noNewNotifications}}btn-default{{else}}btn-primary{{/if}}" type="button">
+        New: <span class="badge">{{newNotifications}}</span>
+    </button>
+</template>

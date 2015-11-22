@@ -17,6 +17,11 @@
         <ul class="nav navbar-nav">
           <li class="{{isActivePath '/'}}"><a href="/">Home<span class="sr-only">(current)</span></a></li>
         </ul>
+        {{#if currentUser}}
+          <ul class="nav navbar-nav navbar-right">
+            {{> notificationBadge}}
+          </ul>
+        {{/if}}
         <ul class="nav navbar-nav navbar-right">
             {{> loginButtons}}
         </ul>

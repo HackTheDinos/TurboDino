@@ -53,3 +53,6 @@
 .yes:hover, .no:hover {
     cursor: pointer;
 }
+.navbar-nav.notification-badge > button{
+   line-height: 10px;
+}
