@@ -9,5 +9,8 @@ Template.home.helpers({
 Template.home.events({
     'click .submit-fossil': function() {
         Router.go('/submission');
+    },
+    'click .view-fossil': function() {
+        Router.go('/gallery/new');
     }
 })
