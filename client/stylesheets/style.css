@@ -1,4 +1,4 @@
-.home-page .btn, .submission-modal .btn {
+.home-page .btn, .submission-modal .btn, .thank-you-modal .btn {
     letter-spacing: 2px;
     padding: 15px;
 }
@@ -7,13 +7,13 @@
     text-align: center;
 }
 
-.submission-modal p {
+.submission-modal p, .thank-you-modal p {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
 }
 
-.submission-modal {
+.submission-modal, .thank-you-modal {
     top: 20%;
 }
 
