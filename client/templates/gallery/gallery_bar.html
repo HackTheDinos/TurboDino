@@ -1,0 +1,13 @@
+<template name="galleryBar">
+    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+        <div class="btn-group" role="group">
+            <a href="/gallery/new" class="btn btn-default {{isActivePath '/gallery/new'}}">New</a>
+        </div>
+        <div class="btn-group" role="group">
+            <a href="/gallery/fossils" class="btn btn-default {{isActivePath '/gallery/fossils'}}">Fossils</a>
+        </div>
+        <div class="btn-group" role="group">
+            <a href="/gallery/nonfossils" class="btn btn-default {{isActivePath '/gallery/nonfossils'}}">Non-Fossils</a>
+        </div>
+    </div>
+</template>

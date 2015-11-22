@@ -33,4 +33,7 @@ Template.home.events({
     //         createdAt: new Date()
     //     })
     // }
+    'click .view-fossil': function() {
+        Router.go('/gallery/new');
+    }
 })
