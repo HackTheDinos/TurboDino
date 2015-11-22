@@ -25,11 +25,16 @@
     width: 100%;
 }
 
-.thumb-container, .thumb-container img, .review-bar {
+.thumb-container, .thumb-container img, .review-bar, .official .btn {
     width: 100%;
 }
 
-.review-bar {
+.official .btn {
+    margin-bottom: 50px;
+    margin-top: -20px;
+}
+
+.review-bar, #reason {
     margin-bottom: 60px;
 }
 
@@ -42,6 +47,10 @@
     color: white;
 }
 
+.official .yes, .official .no {
+    background-color: #ccc;
+}
+
 .yes {
     background-color: #5cb85c;
 }
@@ -51,5 +60,29 @@
 }
 
 .yes:hover, .no:hover {
+    cursor: pointer;
+}
+
+.review-container {
+    width: 100%;
+}
+
+.review-container .review-btn {
+    width: 49%;
+    display: inline-block;
+    background-color: #ccc;
+    text-transform: uppercase;
+    margin-left: 2px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.review-container .selected.review-btn {
+    background-color: #5cb85c;;
+}
+
+.review-container .review-btn:hover {
     cursor: pointer;
 }
