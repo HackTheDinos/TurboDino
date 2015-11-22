@@ -4,6 +4,8 @@
         {{#with photoOfTheWeek}}
             <div class='highlight'>
                 <a href="{{this.url}}" target="_blank"><img src="{{this.url store='Thumbs'}}" alt="" class="thumbnail" /></a>
+                <div>Why it was picked</div>
+                <div>{{highlight.whyPicked}}</div>
             </div>
         {{/with}}
         <button type='button' class='btn btn-primary btn-block submit-fossil'>submit a fossil</button>

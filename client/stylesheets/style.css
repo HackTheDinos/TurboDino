@@ -25,21 +25,30 @@
     width: 100%;
 }
 
-.thumb img, .review-bar {
+.fullWidth, .thumb-container, .thumb img, .review-bar, .official .btn {
     width: 100%;
 }
 
-.review-bar {
+.official .btn {
+    margin-bottom: 50px;
+    margin-top: -20px;
+}
+
+.review-bar, #reason {
     margin-bottom: 60px;
 }
 
-.yes, .no {
+.yes, .no, .star {
     display: inline-block;
-    width: 49%;
+    width: 32%;
     padding: 15px;
     text-align: center;
     font-size: 24px;
     color: white;
+}
+
+.official .yes, .official .no, .official .star {
+    background-color: #ccc;
 }
 
 .yes {
@@ -50,9 +59,34 @@
     background-color: red;
 }
 
-.yes:hover, .no:hover {
+.star {
+    background-color: #ff99ff;
+}
+
+.yes:hover, .no:hover, .star:hover {
     cursor: pointer;
 }
-.navbar-nav.notification-badge > button{
-   line-height: 10px;
+
+.review-container {
+    width: 100%;
+}
+
+.review-container .review-btn {
+    width: 49%;
+    display: inline-block;
+    background-color: #ccc;
+    text-transform: uppercase;
+    margin-left: 2px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.review-container .selected.review-btn {
+    background-color: #5cb85c;;
+}
+
+.review-container .review-btn:hover {
+    cursor: pointer;
 }

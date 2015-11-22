@@ -3,6 +3,10 @@ Template.home.helpers({
         var highlight = Highlights.findOne();
         var image = highlight && Images.findOne({_id: highlight.photoId})
         return image;
+    },
+    highlight: function () {
+        var highlight = Highlights.findOne();
+        return highlight;
     }
 })
 
@@ -14,9 +18,7 @@ Template.home.events({
         } else {
             e.stopPropagation();
             var menu = $('.navbar-toggle.collapsed');
-            console.log(menu)
             if (menu) {
-                console.log(menu)
                 $('.navbar-toggle.collapsed').removeClass('collapsed');
                 menu.attr('aria-expanded', true);
             }

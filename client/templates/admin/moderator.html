@@ -1,0 +1,9 @@
+<template name='moderator'>
+    {{#each images 'pre'}}
+        {{> image}}
+        <div class='review-bar'>
+            <div class='glyphicon glyphicon-ok yes'></div>
+            <div class='glyphicon glyphicon-remove no'></div>
+        </div>
+    {{/each}}
+</template>

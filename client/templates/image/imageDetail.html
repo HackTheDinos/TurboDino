@@ -1,0 +1,13 @@
+<template name="imageDetail">
+    <div class="container">
+        {{> image}}
+        <p>Status: {{status}}</p>
+        <p>Location: {{location}}</p>
+        {{#if officialStory}}
+            <p>Curator Response: {{officialStory}}</p>
+        {{/if}}
+        <p>Story: {{userStory}}</p>
+    </div>
+    {{> commentNew}}
+    {{> comments}}
+</template>
