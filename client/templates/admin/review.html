@@ -1,0 +1,11 @@
+<template name='review'>
+    {{#each preImages}}
+    <div class='thumb-container'>
+        <a href="/image/{{this._id}}" target="_blank"><img src="{{this.url store='Thumbs'}}" alt="" class="thumbnail"/></a>
+        <div class='review-bar'>
+            <div class='glyphicon glyphicon-ok yes'></div>
+            <div class='glyphicon glyphicon-remove no'></div>
+        </div>
+    </div>
+    {{/each}}
+</template>
