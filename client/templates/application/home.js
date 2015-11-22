@@ -1,7 +1,7 @@
 Template.home.helpers({
     photoOfTheWeek: function() {
-        var photoId = Highlights.find().fetch()[0].photoId;
-        var image = Images.findOne({_id: photoId});
+        var highlight = Highlights.findOne();
+        var image = highlight && Images.findOne({_id: highlight.photoId})
         return image;
     }
 })

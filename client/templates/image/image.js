@@ -10,5 +10,5 @@ Template.image.helpers({
     },
     officialStory: function() {
         return this.officialStory;
-    },
+    }
 });
