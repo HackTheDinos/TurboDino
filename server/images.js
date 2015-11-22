@@ -34,3 +34,17 @@ Images.allow({
         return true;
     }
 });
+
+Meteor.methods({
+    saveImage : function (args, fileLocation) {
+        Images.insert(fileLocation, function (err, fileObj) {
+            fileObj.update({$set : {
+                userId: args.userId,
+                status: 'pre',
+                location: args.location,
+                userStory: args.userStory,
+                officialStory: args.officialStory
+            }});
+        });
+    }
+});

@@ -1,3 +1,3 @@
-// Meteor.publish('ExampleCollection', function () {
-//     return ExampleCollection.find();
-// });
+Meteor.publish('Images', function () {
+    return Images.find();
+});
