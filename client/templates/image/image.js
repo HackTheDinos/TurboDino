@@ -8,7 +8,7 @@ Template.image.helpers({
     location: function() {
         return this.location;
     },
-    officalStory: function() {
-        return this.officalStory;
+    officialStory: function() {
+        return this.officialStory;
     },
 });
