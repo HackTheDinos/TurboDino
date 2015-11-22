@@ -1,9 +1,13 @@
 <template name="image">
-    <img src="{{this.url store='Images'}}" alt="" class="thumbnail"/>
-    <p>Status: {{status}}</p>
-    <p>Location: {{location}}</p>
-    {{#if officialStory}}
-        <p>Curator Response: {{userStory}}</p>
-    {{/if}}
-    <p>Story: {{userStory}}</p>
+    <div class="container">
+        <img src="{{this.url store='Images'}}" alt="" class="thumbnail"/>
+        <p>Status: {{status}}</p>
+        <p>Location: {{location}}</p>
+        {{#if officialStory}}
+            <p>Curator Response: {{userStory}}</p>
+        {{/if}}
+        <p>Story: {{userStory}}</p>
+    </div>
+    {{> commentNew}}
+    {{> comments}}
 </template>
