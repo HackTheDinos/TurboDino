@@ -1,0 +1,17 @@
+<template name='curator'>
+    <div class='official'>
+        {{#each images 'new'}}
+            {{> thumb}}
+            <div class='review-bar'>
+                <div class='glyphicon glyphicon-ok yes'></div>
+                <div class='glyphicon glyphicon-remove no'></div>
+            </div>
+            <form class='officialize'>
+                <div class="form-group">
+                    <textarea type="reason" class="form-control" id="reason" placeholder="Enter reason" required></textarea>
+                </div>
+                <button id="submit" type="submit" class="officialize btn btn-default">Submit</button>
+            </form>
+        {{/each}}
+    </div>
+</template>
